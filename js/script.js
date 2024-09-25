@@ -8,7 +8,7 @@ const config = {
     serverInfo: {
         serverLogoImageFileName: "logo.png", /*This is a file name for logo in /images/ (If you upload new logo with other name, you must change this value)*/
         serverName: "Lords-World", /*Server name*/
-        serverIp: "mc.lords-world.eu", /*Server IP (if you want to add online user counter, you must have true the enable-status and enable-query of server.properties)*/
+        serverIp: "lords-world", /*Server IP (if you want to add online user counter, you must have true the enable-status and enable-query of server.properties)*/
         discordServerID: "1282040186880131112" /*Your server ID (if you want to add online user counter, you must have enabled Discord server widget)*/
     },
 
@@ -259,7 +259,7 @@ const getMinecraftOnlinePlayer = async () => {
     try {
         const serverIp = config.serverInfo.serverIp;
 
-        const apiUrl = `https://api.mcsrvstat.us/2/${mc.lords-world.eu}`;
+        const apiUrl = `https://api.mcsrvstat.us/2/${rabbit.hostify.cz:54700}`;
         let response = await fetch(apiUrl);
         let data = await response.json();
 
