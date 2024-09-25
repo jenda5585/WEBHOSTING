@@ -7,9 +7,9 @@ If something doesn't work please contact me on discord (Astronawta#0012).
 const config = {
     serverInfo: {
         serverLogoImageFileName: "logo.png", /*This is a file name for logo in /images/ (If you upload new logo with other name, you must change this value)*/
-        serverName: "ExampleName", /*Server name*/
-        serverIp: "mc.hypixel.net", /*Server IP (if you want to add online user counter, you must have true the enable-status and enable-query of server.properties)*/
-        discordServerID: "489529070913060867" /*Your server ID (if you want to add online user counter, you must have enabled Discord server widget)*/
+        serverName: "Lords-World", /*Server name*/
+        serverIp: "mc.lords-world.eu", /*Server IP (if you want to add online user counter, you must have true the enable-status and enable-query of server.properties)*/
+        discordServerID: "1282040186880131112" /*Your server ID (if you want to add online user counter, you must have enabled Discord server widget)*/
     },
 
     /*Admin-Team
@@ -181,7 +181,7 @@ const config = {
     Emails are sent via https://formsubmit.co/
     */
     contactPage: {
-        email: "astronavta@example.com"
+        email: "lordsworldeu@gmail.com"
     }
 }
 
@@ -244,7 +244,7 @@ const getDiscordOnlineUsers = async () => {
     try {
         const discordServerId = config.serverInfo.discordServerID;
 
-        const apiWidgetUrl = `https://discord.com/api/guilds/${discordServerId}/widget.json`;
+        const apiWidgetUrl = `https://discord.com/api/guilds/${1282040186880131112}/widget.json`;
         let response = await fetch(apiWidgetUrl);
         let data = await response.json();
 
@@ -259,7 +259,7 @@ const getMinecraftOnlinePlayer = async () => {
     try {
         const serverIp = config.serverInfo.serverIp;
 
-        const apiUrl = `https://api.mcsrvstat.us/2/${serverIp}`;
+        const apiUrl = `https://api.mcsrvstat.us/2/${mc.lords-world.eu}`;
         let response = await fetch(apiUrl);
         let data = await response.json();
 
