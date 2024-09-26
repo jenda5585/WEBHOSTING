@@ -1,0 +1,23 @@
+options -Indexes
+
+<Files .env>
+order allow,deny
+Deny from all
+</Files>
+
+ErrorDocument 404 https://tropicland.eu
+ErrorDocument 401 https://tropicland.eu
+ErrorDocument 406 https://tropicland.eu
+ErrorDocument 408 https://tropicland.eu
+ErrorDocument 409 https://tropicland.eu
+ErrorDocument 414 https://tropicland.eu'
+ErrorDocument 502 https://tropicland.eu
+ErrorDocument 405 https://tropicland.eu
+ErrorDocument 403 https://tropicland.eu
+ErrorDocument 417 https://tropicland.eu
+ErrorDocument 413 https://tropicland.eu
+ErrorDocument 507 https://tropicland.eu
+ErrorDocument 508 https://tropicland.eu
+ErrorDocument 426 https://tropicland.eu
+ErrorDocument 500 https://tropicland.eu
+ErrorDocument 302 https://tropicland.eu
